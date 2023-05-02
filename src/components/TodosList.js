@@ -1,10 +1,6 @@
 import TodoItem from "./TodoItem";
-import InputTodo from './InputTodo';
 
 const TodosList = ({ todosProps, handleChange, delTodo }) => {
-  const addTodoItem = (title) => {
-    // update state with user's input
-  };
 
   return (
     <div>
