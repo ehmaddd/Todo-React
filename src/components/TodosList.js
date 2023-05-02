@@ -1,10 +1,9 @@
-import TodoItem from "./TodoItem";
+/* eslint-disable react/prop-types */
+import TodoItem from './TodoItem';
 
-const TodosList = ({ todosProps, handleChange, delTodo }) => {
-
-  return (
-    <div>
-      <ul>
+const TodosList = ({ todosProps, handleChange, delTodo }) => (
+  <div>
+    <ul>
       {todosProps.map((todo) => (
         <TodoItem
           key={todo.id}
@@ -14,7 +13,7 @@ const TodosList = ({ todosProps, handleChange, delTodo }) => {
         />
       ))}
     </ul>
-    </div>
-  );
-};
+  </div>
+);
+
 export default TodosList;
